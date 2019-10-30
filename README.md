@@ -1,4 +1,5 @@
 # SSUI HW6 Favorite States
+See the website running [here](https://jts-favorite-states.netlify.com/)
 
 [React USA Map](https://www.npmjs.com/package/react-usa-map) was used to create in interactive map on the home page
 
