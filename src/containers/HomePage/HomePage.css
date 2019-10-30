@@ -1,0 +1,186 @@
+.Banner {
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+  background-color: #276fbf;;
+
+}
+
+.BannerText {
+  color: #fff;
+  font-weight: 600;
+  font-size: 4rem;
+  user-select: none;
+  text-align: center;
+  animation-duration: .5s;
+  animation-name: slideInDown;
+}
+
+.USAMap {
+  display: flex;
+  justify-content: center;
+  animation-duration: 1s;
+  animation-name: pulse;
+}
+
+.states {
+  text-align: center;
+
+}
+
+.StateName {
+  font-size: 2em;
+}
+
+ol {
+    display:inline-block;
+    text-align:left;
+
+
+}
+
+#VA a {
+  color: orange;
+}
+
+#NY a {
+  color: red;
+}
+
+#MN a {
+  color: purple;
+}
+
+#CA a {
+  color: blue;
+}
+
+#WA a {
+  color: green;
+}
+
+.Instructions {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+ 
+}
+
+.BottomHalf {
+  animation-duration: 1s;
+  animation-name: fadeInUp;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+@media screen and (max-width: 600px) {
+  .Banner {
+    height: 300px;
+  }
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
